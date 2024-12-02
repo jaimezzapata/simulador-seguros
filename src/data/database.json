@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "id": "b673",
+      "usuario": "admin",
+      "nombre": "Jaime Zapata",
+      "contraseña": 1234,
+      "profesion": "Developer",
+      "edad": 33,
+      "telefono": 3246720301,
+      "correo": "zapataval2304@gmail.com",
+      "vivo": true
+    },
+    {
+      "id": "as234-234sdf",
+      "usuario": "superadmin",
+      "nombre": "yerismua",
+      "contraseña": "yerismua",
+      "profesion": "Arquitecta de Software",
+      "edad": 20,
+      "telefono": 3246720301,
+      "correo": "yerismua@gmail.com",
+      "vivo": true
+    }
+  ]
+}
