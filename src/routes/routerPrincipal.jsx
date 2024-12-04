@@ -1,6 +1,6 @@
 import Home from "../pages/Home";
+import Login from "../pages/Login";
 import Simulador from "../pages/Simulador";
-
 export let router = [
   {
     path: "/",
@@ -9,5 +9,9 @@ export let router = [
   {
     path: "/simulador",
     element: <Simulador />,
-  }
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
 ];
