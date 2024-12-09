@@ -11,21 +11,21 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  form div {
+}
+
+form div {
     margin-bottom: 1.5rem;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     font-size: 0.9rem;
     font-weight: bold;
     color: #3c5a78;
     margin-bottom: 0.5rem;
-  }
-  
-  input {
+}
+
+input {
     width: 100%;
     padding: 0.8rem;
     font-size: 1rem;
@@ -33,14 +33,14 @@ form {
     border-radius: 6px;
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  input:focus {
+}
+
+input:focus {
     border-color: #69a6d1;
     box-shadow: 0 0 5px rgba(105, 166, 209, 0.5);
-  }
-  
-  button {
+}
+
+button {
     background-color: #3c8ec2;
     color: #ffffff;
     font-size: 1rem;
@@ -51,23 +51,24 @@ form {
     width: 100%;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #2b79a1;
-  }
-  
-  button:active {
+}
+
+button:active {
     transform: scale(0.98);
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(-20px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}

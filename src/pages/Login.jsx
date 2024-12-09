@@ -11,6 +11,12 @@ const Login = () => {
     fetch("http://localhost:7714/usuarios")
       .then((response) => response.json())
       .then((data) => setUsuarios(data));
+
+    let auth = getUsuarios.some(
+      (getUsuario) =>
+        getUsuario.contraseña == getContrasena && getUsuario.correo == getCorreo
+    );
+    console.log(auth);
   }
 
   return (
