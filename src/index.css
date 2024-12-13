@@ -8,59 +8,89 @@ body {
   margin: 0;
 }
 
-.home, .simulador{
+.home,
+.simulador {
   min-width: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+}
+
+.simulador form {
+  width: 1200px;
+  position: absolute;
+  top: 60px;
+  left: 200px;
 }
 
 /* Estilo general del header */
 .header {
-  background-color: #282c34; /* Fondo oscuro */
-  padding: 1rem; /* Espaciado alrededor */
-  display: flex; /* Alinear elementos */
-  justify-content: center; /* Centrar el contenido horizontalmente */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+  background-color: #282c34;
+  /* Fondo oscuro */
+  padding: 1rem;
+  /* Espaciado alrededor */
+  display: flex;
+  /* Alinear elementos */
+  justify-content: center;
+  /* Centrar el contenido horizontalmente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Sombra elegante */
 }
 
 /* Estilo del contenedor de navegación */
 .nav {
-  max-width: 1200px; /* Ancho máximo para centrar */
-  width: 100%; /* Ancho completo en pantallas pequeñas */
+  max-width: 1200px;
+  /* Ancho máximo para centrar */
+  width: 100%;
+  /* Ancho completo en pantallas pequeñas */
 }
 
 /* Estilo de la lista de navegación */
 .nav-list {
-  display: flex; /* Mostrar elementos en línea */
-  list-style: none; /* Quitar viñetas */
-  margin: 0; /* Eliminar márgenes */
-  padding: 0; /* Eliminar padding */
-  justify-content: space-around; /* Espaciar los elementos uniformemente */
+  display: flex;
+  /* Mostrar elementos en línea */
+  list-style: none;
+  /* Quitar viñetas */
+  margin: 0;
+  /* Eliminar márgenes */
+  padding: 0;
+  /* Eliminar padding */
+  justify-content: space-around;
+  /* Espaciar los elementos uniformemente */
 }
 
 /* Estilo de los elementos de la lista */
 .nav-item {
-  margin: 0 1rem; /* Separación entre ítems */
+  margin: 0 1rem;
+  /* Separación entre ítems */
 }
 
 /* Estilo de los enlaces */
 .nav-link {
-  text-decoration: none; /* Quitar subrayado */
-  color: #61dafb; /* Azul claro */
-  font-size: 1.2rem; /* Tamaño de texto */
-  font-weight: bold; /* Texto en negrita */
-  transition: color 0.3s ease; /* Animación suave */
+  text-decoration: none;
+  /* Quitar subrayado */
+  color: #61dafb;
+  /* Azul claro */
+  font-size: 1.2rem;
+  /* Tamaño de texto */
+  font-weight: bold;
+  /* Texto en negrita */
+  transition: color 0.3s ease;
+  /* Animación suave */
 }
 
 /* Hover en los enlaces */
 .nav-link:hover {
-  color: #ffffff; /* Cambiar a blanco al pasar el cursor */
+  color: #ffffff;
+  /* Cambiar a blanco al pasar el cursor */
 }
 
 /* Activo (puedes personalizar esto según tus rutas activas) */
 .nav-link-active {
-  color: #ffffff; /* Blanco para el enlace activo */
-  border-bottom: 2px solid #61dafb; /* Subrayado decorativo */
+  color: #ffffff;
+  /* Blanco para el enlace activo */
+  border-bottom: 2px solid #61dafb;
+  /* Subrayado decorativo */
 }
