@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -10,10 +10,13 @@ const Login = () => {
   const [getUsuarios, setUsuarios] = useState([]);
   let redireccion = useNavigate();
 
+  console.log(getUsuarios);
+
   function iniciarSesion() {
     fetch("http://localhost:7714/usuarios")
       .then((response) => response.json())
       .then((data) => setUsuarios(data));
+      
     let auth = getUsuarios.some(
       (getUsuario) =>
         getUsuario.contraseña == getContrasena && getUsuario.correo == getCorreo
@@ -38,9 +41,14 @@ const Login = () => {
           redireccion("/");
         },
       });
+
     }
     /* Validar inicio de sesión con usuario o correo */
   }
+
+  useEffect(() => {
+    iniciarSesion();
+  }, []);
 
   return (
     <form>
