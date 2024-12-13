@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-.home{
+.home, .simulador{
   min-width: 100vh;
   min-height: 100vh;
   display: flex;
